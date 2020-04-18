@@ -1,0 +1,11 @@
+{
+  "name": "blog-build-contentful-trigger",
+  "version": "1.0.0",
+  "description": "Function to trigger my blog build, on contentful webhook",
+  "main": "index.js",
+  "author": "Adam Siekierski",
+  "license": "MIT",
+  "dependencies": {
+    "@now/node": "^1.5.1"
+  }
+}
