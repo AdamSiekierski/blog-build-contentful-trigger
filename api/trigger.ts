@@ -2,7 +2,7 @@ import { NowRequest, NowResponse } from '@now/node';
 import axios from 'axios';
 
 export default (req: NowRequest, res: NowResponse) => {
-  if (req.headers.authorization !== process.env.API_KEY) {
+  if (req.headers['x-api-key'] !== process.env.API_KEY) {
     return res.status(400).json({ error: 'Incorrect key! ' });
   }
 
